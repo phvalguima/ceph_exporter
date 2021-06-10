@@ -141,7 +141,7 @@ func main() {
 		exporterConfig = envflag.String("EXPORTER_CONFIG", "/etc/ceph/exporter.yml", "Path to ceph_exporter config")
 		rgwMode        = envflag.Int("RGW_MODE", 0, "Enable collection of stats from RGW (0:disabled 1:enabled 2:background)")
 
-		logLevel = envflag.String("LOG_LEVEL", "info", "Logging level. One of: [trace, debug, info, warn, error, fatal, panic]")
+		logLevel = envflag.String("LOG_LEVEL", "trace", "Logging level. One of: [trace, debug, info, warn, error, fatal, panic]")
 
 		cephCluster        = envflag.String("CEPH_CLUSTER", defaultCephClusterLabel, "Ceph cluster name")
 		cephConfig         = envflag.String("CEPH_CONFIG", defaultCephConfigPath, "Path to Ceph config file")
